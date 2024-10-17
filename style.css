@@ -3,6 +3,24 @@ body {
     font-family: Arial, sans-serif;
 }
 
+ul>li {
+    list-style-type: none;
+}
+
+.search-form input {
+    border: 0;
+    font-size: 14px;
+    color: #012970;
+    border: 1px solid rgba(1, 41, 112, 0.2);
+    padding: 7px 38px 7px 8px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.search-form button {
+    margin-left: -30px;
+}
+
 /* Promo Bar */
 .promo-bar {
     background-color: #8b4513;

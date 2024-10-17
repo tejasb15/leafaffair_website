@@ -18,32 +18,133 @@
 </head>
 <body>
 
+    <div class="offcanvas offcanvas-start text-bg-dark" style="width: 290px;" data-bs-scroll="true"
+        id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <form class="search-form d-flex align-items-center" method="POST" action="#">
+                <input type="text" placeholder="Search our store" class="form-control">
+                <button type="submit" class="btn" style="background-color:#89522b;"><i
+                        class="bi bi-search"></i></button>
+            </form>
+        </div>
+        <div class="offcanvas-body">
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">Home</a></h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">Festive Bloom
+                        Edition</a></h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">Bestsellers</a>
+                </h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">All Products</a>
+                </h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">New Arrivals</a>
+                </h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">Unisex</a></h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">Necklaces</a>
+                </h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">Earrings</a>
+                </h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">Rings</a></h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">Bracelets</a>
+                </h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">Pins</a></h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"> <a href="#" class="text-decoration-none text-light">Hair
+                        Accessories</a></h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">Stationery</a>
+                </h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">Home Decor</a>
+                </h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">DIY Flower
+                        Press</a></h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"> <a href="#" class="text-decoration-none text-light">Our Story</a>
+                </h4>
+            </div>
+            <div class="py-2">
+                <h4 class="fs-5 py-2 border-bottom"> <a href="#" class="text-decoration-none text-light">Shipping Policy
+                    </a></h4>
+            </div>
+            <div class="py-2 my-3">
+                <h4 class="fs-5 py-2 border-bottom"><a href="#" class="text-decoration-none text-light">Contact Us</a>
+                </h4>
+            </div>
+            <p><a href="#" class="text-decoration-none text-secondary">Log in</a></p>
+            <p><a href="#" class="text-decoration-none text-secondary">Create Account</a></p>
+            <p><a href="#" class="text-decoration-none text-secondary">About Us</a></p>
+            <p><a href="#" class="text-decoration-none text-secondary">Refund Policy</a></p>
+            <p><a href="#" class="text-decoration-none text-secondary">Terms Of Use</a></p>
+            <p><a href="#" class="text-decoration-none text-secondary">Privacy Policy</a></p>
+        </div>
+    </div>
     <!-- promo bar -->
     <div class="promo-bar bg-brown text-white py-2 text-center">
         <p class="mb-0">Flat 10% OFF on your first order | CODE- FIRSTAFFAIR</p>
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-        <div class="container">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container ">
 
-            <a class="btn btn-white fs-4">
+            <a class="btn btn-light fs-4" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon"></span>
             </a>
 
-            <a class="navbar-brand mx-auto " href="#">
+            <a class="navbar-brand mx-auto" href="#">
                 <img src="./assests/image/Leafy_Affair.webp" alt="Leafy Affair" class="logo">
             </a>
 
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-person"></i></a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-search"></i></a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-cart"></i></a></li>
-                <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-heart"></i></a></li>
-            </ul>
+
+            <nav class="navbar-nav me-2 d-flex align-items-end justify-content-center">
+                <ul class="d-flex align-items-center">
+                    <li class="nav-item d-none d-lg-block">
+                        <a href="#" class="nav-link "><i class="bi bi-person"></i></a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block d-md-block">
+                        <a href="#" class="nav-link"><i class="bi bi-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="bi bi-cart"></i></a></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="bi bi-heart"></i></a>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
     </nav>
+
+
 
 
     <div id="carouselExampleCaptions" class="carousel slide">
@@ -80,9 +181,11 @@
     <div class="container mt-5 p-3">
         <div class="text-center">
             <h1 class="fs-4 mb-4">MAGICAL Botanical Fashion</h1>
-            <p>Magical dandelion seeds to misty fern leaves, we have the most soulful, earthy jewellery and stationery
+            <p>Magical dandelion seeds to misty fern leaves, we have the most soulful, earthy jewellery and
+                stationery
                 that
-                you can get your hands on! Each piece is carefully curated with lots of love. You wouldn't say 'NO' to a
+                you can get your hands on! Each piece is carefully curated with lots of love. You wouldn't say 'NO'
+                to a
                 bit
                 of forest in your jewellery box now, would you?</p>
         </div>
@@ -276,6 +379,7 @@
             <p class="text-center text-light">Copyright &copy; 2024, Leafy Affair ™. All rights reserved.</p>
         </footer>
     </div>
+
 
     <script src="./script.js"></script>
 
